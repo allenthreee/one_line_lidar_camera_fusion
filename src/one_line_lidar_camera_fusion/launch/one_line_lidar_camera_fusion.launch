@@ -1,0 +1,6 @@
+<launch>
+  <param name = "config_path" type = "string" value = "/home/udi/Desktop/one_line_lidar_camera_fusion/src/one_line_lidar_camera_fusion/config/"/>
+  <node name="one_line_lidar_camera_fusion_node" pkg="one_line_lidar_camera_fusion" type="one_line_lidar_camera_fusion_node" output="screen"/>
+  <node name="rviz" pkg="rviz" type="rviz" />
+  <node name="tf" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 map laser 100"/>
+</launch>
